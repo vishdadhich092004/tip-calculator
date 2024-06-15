@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
-
+import BillInput from "./BillInput";
+import TipSelector from "./TipSelector";
+import TotalBill from "./TotalBill";
+import './index.css'
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <BillInput>What is the bill amount ? </BillInput>
+      <TipSelector>Tip you would like to give ? </TipSelector>
+      <TipSelector>Tip your friend would like to give ? </TipSelector>
+      <TotalBill />
     </div>
-  );
+  )
 }
 
 export default App;
